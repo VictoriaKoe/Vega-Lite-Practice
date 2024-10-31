@@ -7,4 +7,4 @@ Link to dashboard: https://victoriakoe.github.io/Vega-Lite-Practice/FIT3179-Week
 
 ## Week 10 Homework
 All html, css and json files related to W10 homework are located in the "FIT3179_W10_Homework" directory\
-Link to dashboard: https://victoriakoe.github.io/Vega-Lite-Practice/FIT3179-Week10-Homework/
+Link to dashboard: https://victoriakoe.github.io/Vega-Lite-Practice/FIT3179_W10_Homework/

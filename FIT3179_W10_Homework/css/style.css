@@ -1,0 +1,37 @@
+#choropleth_map{
+    top: 20px;
+    left: 80px;
+    right: 20px;
+    bottom: 200px;
+}
+
+#bubble_plot{
+    width: 80%;
+    height: 80%;
+    top: 20px;
+    left: 30px;
+    right: 100px;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.pure-g {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page{
+    width: 850px;
+    background-color: thistle;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+
+}
+
+.vis-container {
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+#choropleth_map{
+    top: 50px;
+    left: 150px;
+    right: 100px;
+    bottom: 200px;
+
+}
+
+#symbol_map{
+    width: 80%;
+    height: 80%;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+
+}

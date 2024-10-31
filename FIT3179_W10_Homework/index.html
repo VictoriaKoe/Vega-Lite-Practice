@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Global Wave Dashboard</title>
+
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css\style.css" media="all">
+  <!--import pure css-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"crossorigin="anonymous">
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class = "page">
+
+  <!--pure grid group -->
+  <div class= "pure-g">
+    <div class="pure-u-1-1">
+        <h2>BTS Popularity Across Global</h2>
+        <p>The chart below shows the Spotify Monthly Listeners across the world for August 2024, highlightling BTS's global popularity.</p>
+    </div>
+    <div class = "pure-u-1-1">
+      <p>Hover over the map to see the number of Spotify Monthly Listeners in each country.</p>
+      <div id="choropleth_map" class="vis-container"></div>
+    </div>
+
+    <!-- pure css grid-->
+    <div class = "pure-g">
+      <div class="pure-u-1-1">
+          <h2>Tour Concert</h2>
+          <p>The chart below shows the Love Yourself: Speak Yourself revenue earned over 2018-2019, vary with the stadium audience capacity. </p>
+      </div>
+     </div>
+      <div class = "pure-u-1-1">
+        <p>Hover over the bubble to see the details of each concert.</p>
+        <div id="bubble_plot" class="vis-container"></div>
+  </div>
+  <!-- end pure css grid group-->
+
+  </div>
+
+
+<!--Include Vega-Lite code to show map on the webpage-->
+
+<script type="text/javascript">
+
+  var spec = "js/choropleth_map.vg.json";
+  vegaEmbed('#choropleth_map', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec2 = 'js/bubble_ly_concert.vg.json';
+  vegaEmbed('#bubble_plot', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+</script>
+
+</body>
+
+</html>
